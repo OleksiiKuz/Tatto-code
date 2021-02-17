@@ -1,0 +1,56 @@
+.modal {
+   position: fixed;
+   top: 0;  
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba($color: #000000, $alpha: .5);
+   display: none;
+
+   &-active {
+      display: flex;
+   }
+}
+
+.modal__dialog {
+   margin: auto;
+   max-width: 450px;
+   width: 60%;
+   min-height: 200px;
+   background-color: rgba($color: $gray, $alpha: .9);
+   padding: 40px;
+   position: relative;
+   border: 1px solid $yellow;
+   
+
+   &-close {
+      position: absolute;
+      top: -8px;
+      right: 0;
+      border: none;
+    background: transparent;
+    outline: none;
+    color: $yellow;
+    font-size: 50px;
+    cursor: pointer;
+   }
+}
+
+.modal__form {
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.modal__input {
+   color: #fff;
+}
+
+.form__title--modal {
+   text-align: center;
+}
+
+.form__subtitle--modal {
+   text-align: center;
+}

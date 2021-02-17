@@ -1,0 +1,100 @@
+.promo {
+   height: 100vh;
+   background-image: url(./../img/promo-bg.jpg);
+   background-repeat: no-repeat;
+   background-position: left center;
+   background-size: cover;
+   position: relative;
+  
+}
+
+.header {
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 2;
+}
+
+.header__navigation--mobile {
+   display: none;
+}
+
+.header__navigation-item--mobile {
+   display: none;
+}
+.promo__title {
+   font-size: 50px;
+font-weight: 700;
+}
+
+.promo__wrapper {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding-top: 266px;
+}
+.promo__decription {
+   color: #000000;
+   font-family: Montserrat;
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 30px;
+   
+   margin-top: 30px;
+
+   margin-bottom: 44px;
+}
+.promo__img {
+   position: absolute;
+   right: 100px;
+   top: 116px;
+}
+
+.promo__adaptive-img {
+    margin: 0 auto;
+    display: none;
+}
+
+.button--promo {
+   
+   padding: 0px 60px;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 50px;
+}
+
+.promo__arrow {
+   text-align: center;
+   margin-top: 193px;
+   animation: promoArrow 1.5s infinite;
+   
+
+   & a {
+      opacity: .3;
+      transition: .2s linear;
+      
+   }
+
+   & a:hover {
+      opacity: 1;
+   }
+
+   img {
+      margin: 0 auto;
+   }
+}
+
+@keyframes promoArrow {
+   0% {
+      bottom: 40px;
+   }
+
+   50% {
+      bottom: 20px;
+   }
+
+   100% {
+      bottom: 40px;
+   }
+}
+

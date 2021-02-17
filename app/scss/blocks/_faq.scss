@@ -1,0 +1,57 @@
+.faq__wrapper {
+   margin-top: 40px;
+}
+
+.faq-item {
+    margin-bottom: 5px;
+   color: $gray;
+   
+    border-bottom: 2px solid $yellow;
+
+}
+
+.faq-title {
+    display: block;
+    padding: 20px 70px 20px 10px;
+    position: relative;
+   font-size: 28px;
+   font-weight: 400;
+    cursor: pointer;
+
+    &::before {
+      content: '';
+      width: 24px;
+      height: 24px;
+     position: absolute;
+      // top: 50%;
+      // transform: translateY(-50%);
+      right: 40px;
+      background-image: url(../img/down-arrow.png);
+        transition: .5s linear;
+    }
+}
+
+.faq-title.active {
+
+
+    &::before {
+        
+              transform: rotate(180deg);
+        
+      
+    }
+}
+
+
+
+.faq-title:hover {
+    background-color: $yellow;
+}
+
+
+.faq-text {
+    display: none;
+    padding: 10px 15px;
+    color:$gray;
+    font-size: 22px;
+}

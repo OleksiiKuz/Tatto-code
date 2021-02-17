@@ -1,0 +1,83 @@
+.order {
+   background: #3c3c3c url(./../img/order-bg.jpg);
+
+   .container {
+      position: relative;
+   }
+ 
+}
+
+.section__subtitle {
+   color: $white;
+   font-family: Montserrat;
+   font-size: 40px;
+   font-weight: 400;
+   text-align: center;
+   margin-top: 22px;
+   
+}
+.form {
+   margin-top: 103px;
+   margin-left: 75px;
+}
+.order__form {
+   max-width: 384px;
+}
+
+.order__input {
+   width: 100%;
+   background-color: transparent;
+   border: none;
+   outline: none;
+   margin-bottom: 40px;
+   padding: 11px 7px;
+   border-bottom: 2px solid $yellow;
+   color: #fff;
+
+}
+.form__title {
+   font-family: Montserrat;
+   font-size: 28px;
+   font-weight: 700;
+   color: $white;
+
+}
+.form__subtitle {
+   color: #dcdcdc;
+   font-family: Montserrat;
+   font-size: 16px;
+   font-weight: 400;
+   margin-bottom: 36px;
+   margin-top: 20px;
+
+      span {
+        color: $yellow;
+      }
+}
+
+
+.button--order {
+   color: #dcdcdc;
+   font-size: 16px;
+   padding: 13px 56px;
+
+   &:hover {
+      color: #000;
+   }
+}
+.button__descr {
+   display: inline-block;
+   color: #7c7c7c;
+   font-size: 10px;
+   max-width: 255px;
+   margin-top: 24px;
+
+}
+
+
+
+.order__man {
+   position: absolute;
+   bottom: -100px;
+    right: 15px;
+}
